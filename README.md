@@ -86,6 +86,7 @@ The notes on this section are ways too long to post here and generally repeat th
 `https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/SlackInviteAWS;streamFilter=typeLogStreamPrefix`
 
 ## Deploy web UI
+
 * First, you'll need to enable CORS on the API, see [How to CORS](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html)
 
     > Don't forget to deploy the newly created `OPTIONS` method!
@@ -95,6 +96,13 @@ The notes on this section are ways too long to post here and generally repeat th
     ```
     url -X OPTIONS --url https://c27hhqorea.execute-api.us-east-1.amazonaws.com/prod/slack_invite/
     ```
+* Publish the sign-up web form to S3. Follow instructions http://docs.aws.amazon.com/AmazonS3/latest/user-guide/static-website-hosting.html. 
+Upload the three files from ./web to your new bucket, set permission to "public". 
+
+* PROFIT :)
+
+
+
 
 
 
