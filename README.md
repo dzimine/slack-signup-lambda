@@ -3,6 +3,8 @@
 Serverless slack sign-up with AWS Lambda, in Python.
 Inspired by [Serverless Slack Invite Service](https://github.com/serverless-london/serverless-slack-invite).
 
+> Consider doing it with serverless framework, see https://github.com/dzimine/slack-signup-serverless/
+
 This creates a serverless service for users to sign up for invitations to your Slack. Similar to [slackin](https://github.com/rauchg/slackin), but serverless, that is, no need to run (and pay for) a [virtual] server. The invitation function will run on demand and you only pay per use. 
 
 As a learning exercise for AWS Lambda and serverless, this 
@@ -71,7 +73,7 @@ https://github.com/StackStorm-Exchange/stackstorm-slack#obtaining-auth-token
     ```
 
 ## API Gateway
-Follow the step by step instructions in the [Step-by-step guide](http://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example-configure-event-source.html). At some point say **Fuck it I go [serverless.com](https://serverless.com/framework/docs/providers/aws/guide/quick-start/)**
+Follow the step by step instructions in the [Step-by-step guide](http://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example-configure-event-source.html). At this point I said **Fuck it I go [serverless.com](https://serverless.com/framework/docs/providers/aws/guide/quick-start/)** and re-implemented it, see https://github.com/dzimine/slack-signup-serverless/ 
 
 The notes on this section are ways too long to post here and generally repeat the Step-by-step guide. There are few traps I got into, so I may still post it later. 
 
